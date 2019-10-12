@@ -1,0 +1,4 @@
+<ul [ngClass]="getClass()">
+<li class="btn btn-sm btn-primary" > {{car.name}} | {{car.status}}<br>
+<button type="button" [disabled]="!car.status" (click)="onAction('buy')">Buy</button><button [disabled]="car.status" type="button" (click)="onAction('return')">Return</button></li>
+    </ul>
